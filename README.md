@@ -1,12 +1,32 @@
 # Transform-kit
 
-CodeMigrate
+A smart, dependency aware CLI tool that helps you **safely migrate**, **upgrade**, and **modernize** your JavaScript/TypeScript projects powered by codemods.
 
-A CLI tool for developers to globally install and manage codemod migrations across projects, leveraging the Codemod Registry to identify and apply available transformations.
+## ✨ Features
 
-Features
+- **Automatic package analysis**  
+  Scans your `package.json` and detects installed dependencies.
 
-- Global Installation: Install once, use across all projects.
-- Codemod Discovery: Queries the Codemod Registry to list available migrations.
-- Project Specific Migrations: Detects and applies relevant codemods for your project.
-- Fast and Lightweight: Built for efficiency with minimal setup.
+- **Codemod suggestions**  
+  Shows available codemods relevant to your dependencies.  
+  _Example:_ Migrate from **Yup** to **Zod v4** with a single command.
+
+- **Safe upgrades**  
+  Identifies deprecated packages and guides you through safe, step by step migrations.
+
+- **Interactive CLI**  
+  Choose codemods and upgrade paths through a friendly, interactive prompt.
+
+- **Future support for monorepos**  
+  Planned support for large scale migrations across multiple packages in a monorepo.
+
+## 🚀 Getting Started
+
+### Installation
+```bash
+npm install -g transform-kit
+```
+- Install once, use across all projects.
+- Queries the Codemod Registry to list available migrations.
+- Detects and applies relevant codemods for your project.
+- Built for efficiency with minimal setup.
